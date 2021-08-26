@@ -9,7 +9,7 @@
     >
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="00dp"
+        android:layout_height="0dp"
         android:background="@drawable/img"
         app:layout_constraintBottom_toTopOf="@+id/recycler_country"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,7 +18,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_country"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="500dp"
         android:orientation="vertical"
         android:background="#311b36"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -27,8 +27,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:spanCount="3"
         tools:listitem="@layout/item_country" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
