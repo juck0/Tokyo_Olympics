@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="12dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="16dp"
+
+    tools:context=".ui.MainActivity"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#311b36"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="country"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#311b36"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rank"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rank"
+            app:layout_constraintTop_toTopOf="@+id/rank" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ic_android_black_24dp"
+            android:textColor="#361A3C"
+            app:layout_constraintBottom_toBottomOf="@+id/total"
+            app:layout_constraintEnd_toStartOf="@+id/gold_medal"
+            app:layout_constraintTop_toTopOf="@+id/total" />
+
+        <TextView
+            android:id="@+id/gold_medal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#311b36"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/total"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/total" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ic_android_black_24dp"
+            android:textColor="#311b36"
+            app:layout_constraintBottom_toBottomOf="@+id/country_name"
+            app:layout_constraintEnd_toStartOf="@+id/silver_medal"
+            app:layout_constraintTop_toTopOf="@+id/total" />
+
+        <TextView
+            android:id="@+id/silver_medal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#311b36"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/total"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/total" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ic_android_black_24dp"
+            android:textColor="#311b36"
+            app:layout_constraintBottom_toBottomOf="@+id/total"
+            app:layout_constraintEnd_toStartOf="@+id/bronze_medal"
+            app:layout_constraintTop_toTopOf="@+id/total" />
+
+        <TextView
+            android:id="@+id/bronze_medal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="0"
+
+            android:textColor="#311b36"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/total"
+            app:layout_constraintEnd_toStartOf="@+id/total"
+            app:layout_constraintTop_toTopOf="@+id/total" />
+
+
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:layout_marginEnd="12dp"
+            android:textColor="#311b36"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/country_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/country_name" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
