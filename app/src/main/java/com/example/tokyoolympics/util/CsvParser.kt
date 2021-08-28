@@ -7,12 +7,11 @@ class CsvParser {
         val tokens = line.split(",")
         return Country(
             rank = tokens[Constants.ColumnIndex.RANK].toInt(),
-            team = tokens[Constants.ColumnIndex.TEAM],
+            team = tokens[Constants.ColumnIndex.TEAM].replace("United States of".toRegex(), "").replace("People's".toRegex(), ""),
             goldMedal = tokens[Constants.ColumnIndex.GOLD_MEDAL].toInt(),
             silverMedal = tokens[Constants.ColumnIndex.SILVER_MEDAL].toInt(),
             bronzeMedal = tokens[Constants.ColumnIndex.BRONZE_MEDAL].toInt(),
             total = tokens[Constants.ColumnIndex.TOTAL].toInt(),
-
         )
 
 
